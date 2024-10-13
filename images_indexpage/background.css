@@ -1,0 +1,29 @@
+.back_ground{
+background-color: rgb(240, 236, 236);
+height: 100vh;
+width: 100vw;
+}
+.image1{text-align: center;
+
+color: rgb(28, 28, 27);
+}
+.about{
+    border: 1px solid rgb(67, 63, 63);
+    color: black;
+    background-color: rgb(195, 182, 182);
+padding: 10px;
+
+}
+#boxid{
+    max-width: 125px;
+    max-height:25%;
+    background-color: black;
+    margin: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.boxes{
+    justify-content:space-between;
+    background-color: aquamarine;
+    height: 210px;
+}

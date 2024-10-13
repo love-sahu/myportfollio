@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 1.1rem;
+      }
+
+      body {
+        background-color: rgb(2, 22, 21);
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 32px;
+        padding: 20px;
+      }
+
+      .firstSection {
+        color: aliceblue;
+        font-size: 2.5rem;
+        margin-top: 50px;
+      }
+
+      .firstSectionin {
+        font-size: 1.5rem;
+      }
+
+      .secondSection img {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 20px;
+      }
+
+      .linksection {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .links {
+        display: block;
+        width: 100px;
+        padding: 10px;
+        margin: 0 10px;
+        background-color: rgb(230, 217, 70);
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+      }
+
+      .links:hover {
+        color: rgb(166, 164, 162);
+      }
+
+      .h1 h1 {
+        color: aliceblue;
+        margin: 20px 0;
+        font-size: 2rem;
+        color: rgb(230, 217, 70);
+      }
+
+      main hr {
+        margin: 10px 80px;
+        height: 1px;
+        background-color: rgb(247, 247, 247);
+      }
+
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 25px;
+      }
+
+      .box1 {
+        width: 90%;
+        max-width: 300px;
+        background-color: rgb(156, 188, 218);
+        margin: 15px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgb(220, 206, 206);
+        text-align: center;
+        padding-bottom: 15px;
+      }
+
+      .box1 img {
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+
+      #img3 {
+        padding-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .title h1 {
+        font-size: 1.5rem;
+        color: rgb(223, 141, 0);
+        margin: 15px 0;
+      }
+
+      .button {
+        margin-top: 10px;
+      }
+
+      button.btn {
+        border: 1px solid black;
+        border-radius: 30%;
+        background-color: rgb(223, 141, 0);
+        padding: 10px 32px;
+        box-shadow: 3px 3px 10px rgb(99, 90, 90);
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: rgb(222, 208, 60);
+        color: black;
+        transition: 1s;
+        padding: 10px 16px;
+        font-size: 15px;
+        border-radius: 30%;
+        box-shadow: 5px 5px 20px rgb(18, 16, 16);
+      }
+
+      button.btn a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .section23 {
+        padding-bottom: 52px;
+        padding-top: 52px;
+      }
+
+      @media (max-width: 1624px) {
+        nav ul li a {
+          color: rgb(222, 208, 60);
+          font-size: 1.5rem;
+          padding: 10px 25px;
+          text-decoration: none;
+        }
+
+        nav ul li a:hover {
+          color: rgb(228, 137, 1);
+          text-decoration: none;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .right {
+          font-size: 2.1rem;
+          margin-right: 21vw;
+        }
+
+        .firstSection {
+          font-size: 2rem;
+        }
+
+        .firstSectionin {
+          font-size: 1.3rem;
+        }
+
+        .card {
+          display: block;
+        }
+
+        .box1 {
+          margin: 20px auto;
+        }
+
+        #img3 {
+          height: 220px;
+          margin-top: 20px;
+        }
+
+        nav ul li a {
+          color: rgb(222, 208, 60);
+          font-size: 1.5rem;
+          padding: 10px;
+          text-decoration: none;
+        }
+
+        nav ul li a:hover {
+          color: rgb(228, 137, 1);
+          text-decoration: none;
+        }
+      }
+
+      @media (max-width: 739px) {
+        nav ul li a {
+          color: rgb(222, 208, 60);
+          font-size: 1.5rem;
+          padding: 10px 25px;
+          text-decoration: none;
+        }
+
+        nav ul li a:hover {
+          color: rgb(228, 137, 1);
+          text-decoration: none;
+        }
+
+        .firstSection {
+          font-size: 1.8rem;
+        }
+
+        .firstSectionin {
+          font-size: 1.2rem;
+        }
+
+        .links {
+          width: 80px;
+          padding: 8px;
+        }
+
+        button .btn {
+          padding: 8px 24px;
+        }
+
+        .box1 {
+          max-width: 90%;
+        }
+
+        ul {
+          display: block;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .horizontal hr {
+          height: 50vh;
+          width: 0.5%;
+          margin-left: 10%;
+          margin-right: 10%;
+          color: white;
+        }
+        div.ver {
+          width: 70vw;
+        }
+
+        .firstSection {
+          font-size: 1.5rem;
+        }
+
+        .firstSectionin {
+          font-size: 1rem;
+        }
+
+        .links {
+          width: 70px;
+          padding: 6px;
+        }
+
+        button .btn {
+          padding: 6px 18px;
+        }
+
+        .box1 {
+          max-width: 100%;
+        }
+
+        .h1 h1 {
+          font-size: 1.5rem;
+        }
+
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .right {
+          margin-right: 0;
+          text-align: center;
+        }
+
+        .profile img {
+          width: 50px;
+          height: 50px;
+        }
+
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          right: 120px;
+
+          padding-left: 21px;
+        }
+
+        .right2 {
+          font-size: 2rem;
+        }
+
+        nav ul li {
+          padding-bottom: 6px;
+        }
+
+        nav ul li a {
+          text-decoration: none;
+          background-color: rgb(222, 208, 60);
+          border-radius: 10px;
+          padding: 3px;
+          color: black;
+          text-decoration: none;
+          font-size: 1rem;
+        }
+
+        .nav1 {
+          height: 150px;
+        }
+
+        nav ul li {
+          background-color: rgb(222, 208, 60);
+          color: black;
+          transition: 1s;
+          padding: 5px 8px;
+          font-size: 10px;
+          border-radius: 30%;
+          box-shadow: 5px 5px 15px rgb(58, 56, 12);
+          list-style-type: none;
+        }
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        color: white;
+        background-color: rgb(42, 56, 91);
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+      }
+
+      .profile img {
+        border-radius: 100%;
+        width: 60px;
+        height: 70px;
+        margin: 30px;
+      }
+
+      .right {
+        font-size: 2.1rem;
+        margin-right: 25vw;
+        color: rgb(255, 225, 0);
+      }
+
+      .right2 {
+        font-size: 2.5rem;
+        color: rgb(223, 141, 0);
+      }
+
+      .horizontal {
+        height: 2px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;
+      }
+
+      .vertical {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .ver {
+        height: 150px;
+        width: 18%;
+        border: 2px solid white;
+      }
+
+      .boxes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px 0;
+      }
+
+      .boxes img {
+        width: 100px;
+        height: 100px;
+        border-radius: 30%;
+        box-shadow: 5px 5px 15px rgb(190, 152, 0);
+        margin: 15px;
+      }
+
+      /* Media Queries for Responsive Design */
+      @media (max-width: 1624px) {
+        .vertical {
+          flex-direction: row;
+        }
+
+        .ver {
+          width: 16%;
+        }
+
+        .boxes img {
+          width: 90px;
+          height: 90px;
+        }
+        #img1 {
+          position: relative;
+          bottom: 230px;
+        }
+        #img4 {
+          position: relative;
+          bottom: 230px;
+        }
+        #img2 {
+          position: relative;
+          bottom: 230px;
+        }
+        #img3 {
+          position: relative;
+          bottom: 230px;
+        }
+        #img5 {
+          position: relative;
+          bottom: 230px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .vertical {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .ver {
+          width: 45%;
+          margin-bottom: 20px;
+        }
+
+        .boxes img {
+          width: 80px;
+          height: 80px;
+        }
+        #img1 {
+          position: relative;
+          bottom: 650px;
+          left: 60px;
+        }
+        #img4 {
+          position: relative;
+          bottom: 650px;
+          right: 60px;
+        }
+        #img2 {
+          position: relative;
+          bottom: 475px;
+          right: 50px;
+        }
+        #img3 {
+          position: relative;
+          bottom: 430px;
+          left: 60px;
+        }
+        #img5 {
+          position: relative;
+          bottom: 530px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .vertical {
+          flex-direction: column;
+        }
+
+        .ver {
+          width: 80%;
+          margin-bottom: 20px;
+        }
+
+        .boxes {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .boxes img {
+          width: 70px;
+          height: 70px;
+        }
+        #img1 {
+          position: relative;
+          bottom: 880px;
+          left: 1px;
+        }
+        #img4 {
+          position: relative;
+          bottom: 730px;
+          right: 0px;
+        }
+        #img2 {
+          position: relative;
+          bottom: 810px;
+          right: 0px;
+        }
+        #img3 {
+          position: relative;
+          bottom: 815px;
+          left: 0px;
+        }
+        #img5 {
+          position: relative;
+          bottom: 1010px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <nav class="nav1">
+        <div class="profile">
+          <img
+            src="./images_indexpage/WhatsApp Image 2024-07-07 at 17.58.30_86299e52.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="right">love's <span class="right2">portfollio</span></div>
+
+        <ul>
+          <li><a href="#home"> home </a></li>
+          <li><a href="./images_indexpage//loveresume.pdf"> resume</a></li>
+          <li><a href="#project"> project</a></li>
+          <li><a href="#section23"> contact</a></li>
+        </ul>
+      </nav>
+      <section class="section1" id="home">
+        <div class="firstSection">
+          Hi, my name is <span class="firstSection" id="love">Love Sahu</span>
+          <div class="firstSectionin">I am a passionate</div>
+          <span class="firstSectionin" id="element"></span>
+          <div class="linksection">
+            <a
+              class="links"
+              href="https://www.linkedin.com/in/love-sahu-sahu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >LinkedIn</a
+            >
+            <a
+              class="links"
+              href="https://www.linkedin.com/in/love-sahu-sahu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >CodePen</a
+            >
+          </div>
+        </div>
+        <div class="secondSection">
+          <img
+            src="./images_indexpage//vecteezy_software-engineer-png-graphic-clipart-design_20962987.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <hr />
+
+      <section class="section2">
+        <div class="h1" id="project">
+          <h1>Projects</h1>
+        </div>
+        `
+        <div class="card">
+          <div class="box1">
+            <div class="image">
+              <img src="./images_indexpage//navlogo.jpeg" alt="" />
+            </div>
+            <div class="title">
+              <h1>Project 1</h1>
+            </div>
+            <div class="button">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              dignissimos.
+            </div>
+            <div class="button">
+              <button class="btn">
+                <a href="https://sonal.vflyorions.in/lms/index.php">View</a>
+              </button>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="image">
+              <img src="./images_indexpage//amazon.png" alt="" />
+            </div>
+            <div class="title">
+              <h1>Project 2</h1>
+            </div>
+            <div class="button">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              dignissimos.
+            </div>
+            <div class="button">
+              <button class="btn">
+                <a href="https://love-sahu.github.io/amazon.com/">View</a>
+              </button>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="image">
+              <img
+                class="lmsimg"
+                src="./images_indexpage//pngegg2.png"
+                alt=""
+                style="margin: 50px 0 35px"
+              />
+            </div>
+            <div class="title">
+              <h1>Project 3</h1>
+            </div>
+            <div class="button">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              dignissimos.
+            </div>
+            <div class="button">
+              <button class="btn">
+                <a href="https://combocoding-com.netlify.app/gfg">View</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box1">
+            <div class="image">
+              <img src="./images_indexpage//navlogo.jpeg" alt="" />
+            </div>
+            <div class="title">
+              <h1>Project 1</h1>
+            </div>
+            <div class="button">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              dignissimos.
+            </div>
+            <div class="button">
+              <button class="btn">
+                <a href="https://sonal.vflyorions.in/lms/index.php">View</a>
+              </button>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="image">
+              <img src="./images_indexpage//amazon.png" alt="" />
+            </div>
+            <div class="title">
+              <h1>Project 2</h1>
+            </div>
+            <div class="button">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              dignissimos.
+            </div>
+            <div class="button">
+              <button class="btn">
+                <a href="https://love-sahu.github.io/amazon.com/">View</a>
+              </button>
+            </div>
+          </div>
+          <div class="box1 box3">
+            <div class="image">
+              <img
+                class="lmsimg"
+                src="./images_indexpage//pngegg2.png"
+                alt=""
+                style="margin: 50px 0 35px"
+              />
+            </div>
+            <div class="title">
+              <h1>Project 3</h1>
+            </div>
+            <div class="button">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              dignissimos.
+            </div>
+            <div class="button">
+              <button class="btn">
+                <a href="https://combocoding-com.netlify.app/gfg">View</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section3" id="section23">
+        <div class="h1">
+          <h1 style="text-align: center; color: white">Contact Us</h1>
+        </div>
+        <div class="horizontal"></div>
+        <div class="vertical">
+          <div class="ver"></div>
+          <div class="ver"></div>
+          <div class="ver"></div>
+          <div class="ver"></div>
+          <div class="ver"></div>
+        </div>
+
+        <div class="boxes">
+          <div id="img1">
+            <a href="https://combocoding-com.netlify.app/gfg"
+              ><img src="/images_indexpage/linkedin.png" alt="LinkedIn"
+            /></a>
+          </div>
+          <div id="img2">
+            <a href="#"
+              ><img src="/images_indexpage/whatapp.png" alt="WhatsApp"
+            /></a>
+          </div>
+          <div id="img3">
+            <a href="#"
+              ><img src="/images_indexpage/resume.png" alt="Resume"
+            /></a>
+          </div>
+          <div id="img4">
+            <a href="#"
+              ><img src="/images_indexpage/githublo.png" alt="GitHub"
+            /></a>
+          </div>
+          <div id="img5">
+            <a href="#"
+              ><img src="/images_indexpage/navlogo.jpeg" alt="Logo"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["graphic designer", "web developer", "software developer"],
+        typeSpeed: 60,
+      });
+    </script>
+  </body>
+</html>
